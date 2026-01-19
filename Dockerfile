@@ -1,5 +1,8 @@
 FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
 
+# --------------------------
+# Impostazioni Conda
+# --------------------------
 ENV CONDA_DIR=/opt/conda
 ENV PATH=$CONDA_DIR/bin:$PATH
 
@@ -11,24 +14,40 @@ RUN apt-get update && apt-get install -y \
     $CONDA_DIR/bin/conda clean -t -i -p -y && \
     ln -s $CONDA_DIR/etc/profile.d/conda.sh /etc/profile.d/conda.sh
 
+# --------------------------
+# Imposta working directory
+# --------------------------
 WORKDIR /app
 
-RUN git clone https://github.com/LearningForVerification/TripleAIPaper.git
+# --------------------------
+# Copia l’intera repo dentro il container
+# --------------------------
+COPY . /app
 
+# --------------------------
+# Configura Conda
+# --------------------------
 RUN conda config --set channel_priority strict && \
     conda config --add channels defaults && \
     conda tos accept --channel https://repo.anaconda.com/pkgs/main && \
     conda tos accept --channel https://repo.anaconda.com/pkgs/r && \
     conda create -n myenv python=3.10 -y
 
+# --------------------------
+# Installa pacchetti Python
+# --------------------------
 RUN conda run -n myenv pip install --upgrade pip
-RUN conda run -n myenv pip install -r /app/TripleAIPaper/requirements.txt --no-deps
+RUN conda run -n myenv pip install -r /app/requirements.txt --no-deps
 RUN conda run -n myenv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 RUN conda run -n myenv pip install git+https://github.com/Verified-Intelligence/auto_LiRPA.git
 
-# Copia lo script di entrypoint nel container
+# --------------------------
+# Copia entrypoint e rendilo eseguibile
+# --------------------------
 COPY docker-entrypoint.sh /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
-# Usa lo script come entrypoint
+# --------------------------
+# Usa entrypoint come comando di default
+# --------------------------
 CMD ["/app/entrypoint.sh"]

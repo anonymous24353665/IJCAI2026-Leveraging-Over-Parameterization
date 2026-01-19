@@ -1,5 +1,10 @@
 import argparse
 from pathlib import Path
+import sys
+import os
+
+# add the repo root to sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from Generators.ArchitecturesGenerator.src.train_1_layer import run_training
 

@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79767c73-090f-4222-8e22-f05e1805c532" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.ai/mcp/mcp.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generators/PropertyGenerator/results/CUSTOM_CIFAR10/place_holder.txt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/hyper_params_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/hyper_params_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/multi_layer_networks_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/multi_layer_networks_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/regularized_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/regularized_trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/shallow_networks_CIFAR.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/shallow_networks_CIFAR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/train_1_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/train_1_layer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/train_2_layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/train_2_layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/train_conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/src/train_conv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CF.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CX.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CX.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_SH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_SH.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils/nn_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils/nn_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/PropertyGenerator/generate_vnnlib_properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/PropertyGenerator/generate_vnnlib_properties.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generators/PropertyGenerator/generate_vnnlib_properties_cifar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/PropertyGenerator/generate_vnnlib_properties_cifar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/CUSTOM_CIFAR10/placeholder.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="94" />
+    <option name="cachedIndexableFilesCount" value="68" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -71,6 +60,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.dataset.executor": "Run",
     "Python.generate_vnnlib_properties.executor": "Run",
@@ -94,7 +84,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/andr3/Desktop/IJCAI2025-Leveraging-Over-Parameterization/Generators/PropertyGenerator",
+    "last_opened_file_path": "C:/Users/andr3/Desktop/IJCAI2025-Leveraging-Over-Parameterization/Generators/PropertyGenerator/results/CUSTOM_CIFAR10",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,48 +96,24 @@
 }]]></component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1770980424255" />
-    <option name="spentUsd" value="0.0028425" />
+    <option name="spentUsd" value="0.01708875" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="5" />
+    <option name="suspendCountdown" value="1" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\Generators\PropertyGenerator\results\CUSTOM_CIFAR10" />
+      <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\datasets\CUSTOM_CIFAR10" />
       <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\Generators\PropertyGenerator" />
       <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization" />
       <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\Generators\ArchitecturesGenerator" />
-      <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\Generators" />
-      <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\Generators\ArchitecturesGenerator\one_rs_param\configs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\andr3\Desktop\IJCAI2025-Leveraging-Over-Parameterization\Generators\ArchitecturesGenerator\one_rs_param\configs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train_CV">
-    <configuration name="generate_vnnlib_properties" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="IJCAI2025-Leveraging-Over-Parameterization" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generators/PropertyGenerator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generators/PropertyGenerator/generate_vnnlib_properties.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="generate_vnnlib_properties_cifar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IJCAI2025-Leveraging-Over-Parameterization" />
       <option name="ENV_FILES" value="" />
@@ -164,6 +130,30 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generators/PropertyGenerator/generate_vnnlib_properties_cifar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_CF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IJCAI2025-Leveraging-Over-Parameterization" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_CF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -220,44 +210,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_SH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="IJCAI2025-Leveraging-Over-Parameterization" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generators/ArchitecturesGenerator/train_SH.py" />
-      <option name="PARAMETERS" value="--dataset MNIST" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.train_SH" />
-      <item itemvalue="Python.generate_vnnlib_properties" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Python.train_CF" />
       <item itemvalue="Python.generate_vnnlib_properties_cifar" />
       <item itemvalue="Python.train_CV" />
       <item itemvalue="Python.train_CX" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Python.train_CV" />
-        <item itemvalue="Python.train_CX" />
-        <item itemvalue="Python.train_SH" />
         <item itemvalue="Python.generate_vnnlib_properties_cifar" />
-        <item itemvalue="Python.generate_vnnlib_properties" />
+        <item itemvalue="Python.train_CF" />
+        <item itemvalue="Python.train_CX" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +259,7 @@
       <workItem from="1768768479158" duration="4353000" />
       <workItem from="1768773469239" duration="6281000" />
       <workItem from="1768780447077" duration="1864000" />
-      <workItem from="1768783691956" duration="420000" />
+      <workItem from="1768783691956" duration="5890000" />
     </task>
     <servers />
   </component>
@@ -323,15 +301,15 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1768773887191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator/utils" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$hyper_params_search.coverage" NAME="hyper_params_search Coverage Results" MODIFIED="1768757024910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator/one_rs_param" />
-    <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_CV.coverage" NAME="train_CV Coverage Results" MODIFIED="1768784111784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
+    <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_CV.coverage" NAME="train_CV Coverage Results" MODIFIED="1768786182114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_SH.coverage" NAME="train_SH Coverage Results" MODIFIED="1768783959095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$sh_net_2_layers.coverage" NAME="sh_net_2_layers Coverage Results" MODIFIED="1768762104271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator/one_rs_param" />
-    <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_CF.coverage" NAME="train_CF Coverage Results" MODIFIED="1768777950074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
+    <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_CF.coverage" NAME="train_CF Coverage Results" MODIFIED="1768784203116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_shallow.coverage" NAME="train_shallow Coverage Results" MODIFIED="1768770203978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_mnist_fmnist.coverage" NAME="train_mnist_fmnist Coverage Results" MODIFIED="1768769055126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_CX.coverage" NAME="train_CX Coverage Results" MODIFIED="1768784039551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$train_1_layer.coverage" NAME="train_1_layer Coverage Results" MODIFIED="1768769341797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/ArchitecturesGenerator/one_rs_param" />
     <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$generate_vnnlib_properties.coverage" NAME="generate_vnnlib_properties Coverage Results" MODIFIED="1768779606562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/PropertyGenerator" />
-    <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$generate_vnnlib_properties_cifar.coverage" NAME="generate_vnnlib_properties_cifar Coverage Results" MODIFIED="1768783722780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/PropertyGenerator" />
+    <SUITE FILE_PATH="coverage/IJCAI2025_Leveraging_Over_Parameterization$generate_vnnlib_properties_cifar.coverage" NAME="generate_vnnlib_properties_cifar Coverage Results" MODIFIED="1768784426980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Generators/PropertyGenerator" />
   </component>
 </project>

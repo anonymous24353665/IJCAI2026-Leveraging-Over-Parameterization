@@ -76,7 +76,7 @@ if __name__ == "__main__":
     property_folder = "./results/CUSTOM_CIFAR10"
     num_classes = 10
     total_properties = 100
-    batch_size = 32  # solo per DataLoader se necessario
+    batch_size = 32
     shuffle_size = 64
 
     # ============================================================
