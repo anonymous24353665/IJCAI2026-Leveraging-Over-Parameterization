@@ -49,32 +49,38 @@ def generate_csv(file_path, header: list, verbose=False):
 
 def write_results_on_csv(file_path, dict_to_write):
     """
-    Appends a dictionary of results to a CSV file.
-
-    Args:
-        file_path (str): The path to the CSV file.
-        dict_to_write (dict): Dictionary containing the data to write.
-        header (list): List of column names (CSV header).
-        verbose (bool): If True, prints status messages.
+    Appends a dictionary of results to a CSV file with a consistent header.
+    Safely handles empty or partially written files.
     """
     if not isinstance(dict_to_write, dict):
-        raise Exception("Error: dict_to_write must be a dictionary.")
-
+        raise TypeError("dict_to_write must be a dictionary.")
 
     try:
-        file_empty = not os.path.exists(file_path) or os.stat(file_path).st_size == 0
+        file_exists = os.path.exists(file_path)
+        file_empty = (not file_exists) or os.stat(file_path).st_size == 0
 
-        with open(file_path, mode='a', newline='', encoding='utf-8') as file:
-            writer = csv.DictWriter(file, fieldnames=list(dict_to_write.keys()))
+        if not file_empty:
+            with open(file_path, mode="r", encoding="utf-8") as f:
+                reader = csv.reader(f)
+                header = next(reader)
+        else:
+            header = list(dict_to_write.keys())
+
+        # Ensure all header fields exist
+        row = {key: dict_to_write.get(key, None) for key in header}
+
+        with open(file_path, mode="a", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=header)
 
             if file_empty:
                 writer.writeheader()
 
-            writer.writerow(dict_to_write)
-
+            writer.writerow(row)
 
     except Exception as e:
-        raise Exception(f"Failed to write to file {file_path}. Error: {e}")
+        raise RuntimeError(
+            f"Failed to write to file {file_path}: {repr(e)}"
+        )
 
 
 # def combine_batchnorm1d(linear: nn.Linear, batchnorm: nn.BatchNorm1d) -> nn.Linear:

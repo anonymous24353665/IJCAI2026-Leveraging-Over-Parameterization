@@ -46,7 +46,7 @@ def main():
         "--hidden_layers_dim",
         type=int,
         nargs="+",
-        default=[5, 15, 25, 50, 100, 200, 500],
+        required=True,
         help="Dimensione dei layer fully connected dopo la convoluzione"
     )
 
@@ -66,7 +66,7 @@ def main():
 
     parser.add_argument("--min_increment", type=float, default=0.1, help="Valore minimo per la ricerca binaria")
     parser.add_argument("--max_increment", type=float, default=9, help="Valore massimo per la ricerca binaria")
-    parser.add_argument("--steps_limit", type=int, default=10, help="Numero massimo di step per la ricerca binaria")
+    parser.add_argument("--steps_limit", type=int, default=15, help="Numero massimo di step per la ricerca binaria")
 
     parser.add_argument("--rs_loss_bool", action="store_true", help="Se usare il Regularization Sensitivity Loss")
     parser.add_argument("--skip_binary_search", action="store_true", help="Se saltare la ricerca binaria e trainare direttamente")

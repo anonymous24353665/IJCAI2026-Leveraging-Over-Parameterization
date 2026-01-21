@@ -33,8 +33,9 @@ docker build -t ijcai_image .
 Mount your local repo or datasets folder if needed:
 
 ```bash
-docker run -it -v /path/to/local/repo:/app ijcai_image
+docker run -it -v /path/to/local/repo:/app --gpus all ijcai_image
 ```
+Is is strongly advised to use the `--gpus all` flag and ensure that your GPU is visible inside the container. Cuda acceleration is required.
 
 Run the entrypoint:
 
@@ -61,19 +62,36 @@ You can train **SH, CV, CF, or CX architectures**, either with regularization (`
 Train with rs_loss regularization:
 
 ```bash
-python train_SH.py --dataset MNIST|FMNIST --rs_loss_bool
-python train_CX.py --dataset MNIST|FMNIST --rs_loss_bool
-python train_CV.py --dataset MNIST|FMNIST --rs_loss_bool
+python train_SH.py --dataset MNIST|FMNIST --rs_loss_bool --hidden_dim  (to be specified)
+python train_CX.py --dataset MNIST|FMNIST --rs_loss_bool --hidden_dim  (to be specified)
+python train_CV.py --dataset MNIST|FMNIST --rs_loss_bool --hidden_dim  (to be specified)
 ```
 
 Train baseline architectures without regularization:
 
 ```bash
-python train_SH.py --dataset MNIST|FMNIST --skip_binary_search
-python train_CX.py --dataset MNIST|FMNIST --skip_binary_search
-python train_CV.py --dataset MNIST|FMNIST --skip_binary_search
+python train_SH.py --dataset MNIST|FMNIST --skip_binary_search --hidden_dim (to be specified)
+python train_CX.py --dataset MNIST|FMNIST --skip_binary_search --hidden_dim (to be specified)
+python train_CV.py --dataset MNIST|FMNIST --skip_binary_search --hidden_dim (to be specified)
 
 ```
+
+After `--hidden_dim`, specify the number of hidden units in the neural network(s) you want to train.
+
+To **replicate the experiments reported in the paper**, the following values were used for each architecture and dataset.  
+Different values can be provided to perform additional experiments.
+
+## Hidden Units Used in the Paper
+
+| Architecture | Dataset              | `--hidden_dim` values                         |
+|-------------|----------------------|-----------------------------------------------|
+| **SH**      | MNIST                | 30, 100, 200, 500, 1000, 2000, 4000, 8000      |
+| **CX**      | MNIST, FMNIST        | 50, 100, 250, 500, 1000                       |
+| **CV**      | MNIST                | 5, 15, 25, 50, 100, 200, 500                  |
+| **CV**      | FMNIST               | 15, 25, 50, 100, 200, 500                     |
+| **CF**      | CIFAR (Custom)       | 32, 64, 256, 512, 1024                        |
+
+
 
 #### CIFAR (Custom Dataset)
 
@@ -116,7 +134,7 @@ Properties are saved in `/app/Generators/PropertyGenerator/results`
 ---
 
 ## Data on Google Drive
-iven the significant computational time required to train all architectures, we provide the trained models used in the paper at the following link:
+Given the significant computational time required to train all architectures, we provide the trained models used in the paper at the following link:
 https://drive.google.com/drive/folders/1WwTIEEOz9FEcLgCcn9ST9UZV7Owb-9PU
 
 We also provide the CIFAR-10 dataset extracted using a pre-trained ResNet18 model, along with the ResNet18 model itself, used for the CIFAR-10 experiments.

@@ -51,8 +51,8 @@ class BinaryHyperParamsResearch:
         else:
             self.save_folder_all_candidates = os.path.join(RESULTS_FOLDER, dataset_name, "regularized_models", "all_models")
 
-        self.csv_file_path_best_candidates = os.path.join(RESULTS_FOLDER, dataset_name, "regularized_models", "all_models", "results_best_candidates.csv")
-        self.csv_file_path_all_candidates = os.path.join(RESULTS_FOLDER, dataset_name, "regularized_models", "all_models", "results_all_candidates.csv")
+        self.csv_file_path_best_candidates = str(os.path.join(RESULTS_FOLDER, dataset_name, "regularized_models", "results_best_candidates.csv"))
+        self.csv_file_path_all_candidates = str(os.path.join(RESULTS_FOLDER, dataset_name, "regularized_models", "results_all_candidates.csv"))
         self.device = device
         self.rs_loss_bool = rs_loss_bool
 
